@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Validation Form</title>
+
+<style>
+    body {
+        font-family: Arial;
+        padding: 20px;
+    }
+    label {
+        font-weight: bold;
+    }
+</style>
+
+</head>
+<body>
+
+<h2>Validation Form</h2>
+
+<form>
+
+<label>Enter the Name:</label>
+<input type="text" id="tn" name="time"
+       required minlength="3" maxlength="20"
+       placeholder="Enter your name">
+<br><br>
+
+<label>Email:</label>
+<input type="email" placeholder="Enter Email" required>
+<br><br>
+
+<label>Address:</label>
+<textarea rows="3" placeholder="Enter Address" required minlength="10"></textarea>
+<br><br>
+
+<label>Date of Birth:</label>
+<input type="date" required>
+<br><br>
+
+<label>Enter the Password:</label>
+<input type="password" id="tp" name="pass"
+       required minlength="6"
+       placeholder="Minimum 6 characters">
+<br><br>
+
+<label>Enter the Confirm Password:</label>
+<input type="password" id="ctp" name="cpass"
+       required minlength="6"
+       placeholder="Re-enter password">
+<br><br>
+
+<label>Choose the Gender:</label><br>
+<input type="radio" value="m" name="gender" id="mr" required> Male
+<input type="radio" value="f" name="gender" id="fr"> Female
+<br><br>
+
+<label>Select Course:</label>
+<select id="course" name="coursename" required>
+        <option value="">-------Select Course-------</option>
+        <option value="c">C Language</option>
+        <option value="mern">MERN Stack</option>
+        <option value="jfs">Java Full Stack</option>
+        <option value="py">Python Language</option>
+</select>
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
